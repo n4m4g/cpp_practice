@@ -25,6 +25,7 @@ int main() {
 		inFile.ignore();
 
 		if(!inFile) {
+			inFile.close();
 			break;
 		}
 
