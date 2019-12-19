@@ -4,9 +4,14 @@
 using namespace std;
 
 int main() {
+	// ifstream inFile;
+	fstream inFile;
+
+	// file name
 	string fname = "../text.txt";
-	ifstream inFile;
-	inFile.open(fname);
+
+	// inFile.open(fname);
+	inFile.open(fname, ios::in);
 
 	if(inFile.is_open()) {
 		string line;
