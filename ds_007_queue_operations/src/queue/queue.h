@@ -16,6 +16,8 @@ class Queue {
 		int count();
 		void display();
 		void ptrStatus();
+
+		~Queue();
 };
 
 #endif

@@ -19,6 +19,7 @@ class Stack {
 		int peek(int pos);
 		void change(int pos, int val);
 		void display();
+		~Stack();
 };
 
 #endif

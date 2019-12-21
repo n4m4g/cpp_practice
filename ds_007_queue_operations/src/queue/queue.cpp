@@ -76,3 +76,5 @@ void Queue::display() {
 void Queue::ptrStatus() {
 	cout << "front: " << front << ", rear: " << rear << endl;
 }
+
+Queue::~Queue() {}

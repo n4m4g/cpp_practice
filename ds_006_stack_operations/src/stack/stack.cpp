@@ -80,3 +80,5 @@ void Stack::display() {
 	}
 }
 
+Stack::~Stack() {}
+
