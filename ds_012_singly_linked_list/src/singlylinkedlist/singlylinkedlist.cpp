@@ -1,6 +1,6 @@
 // singlylinkedlist.cpp
 #include <iostream>
-#include "../node/node.h"
+#include "node/node.h"
 #include "singlylinkedlist.h"
 
 using namespace std;
