@@ -13,8 +13,13 @@ int main() {
 	// outFile.open(fname);
 	outFile.open(fname, ios::out);
 
+	// check whether the file is open
 	if(outFile.is_open()) {
-		outFile << "Hello world" << endl;
+		// endl is new line
+		outFile << "Hello world 0" << endl;
+		outFile << "Hello world 1" << endl;
+
+		// close the file after writing
 		outFile.close();
 	} else {
 		cout << "Could not create file: " << fname << endl;
