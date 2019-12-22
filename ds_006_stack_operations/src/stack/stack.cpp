@@ -4,6 +4,7 @@
 
 using namespace std;
 
+// constructor
 Stack::Stack() {
 	top = -1;
 	for(int i=0; i<5; i++) {
@@ -11,6 +12,7 @@ Stack::Stack() {
 	}
 }
 
+// check whether the stack is empty
 bool Stack::isEmpty() {
 	if(top == -1) {
 		return true;
@@ -19,6 +21,7 @@ bool Stack::isEmpty() {
 	}
 }
 
+// check whether the stack is full
 bool Stack::isFull() {
 	if(top == 4) {
 		return true;
@@ -27,6 +30,7 @@ bool Stack::isFull() {
 	}
 }
 
+// push value to stack
 void Stack::push(int val) {
 	if(isFull()) {
 		cout << "stack overflow" << endl;
@@ -36,6 +40,7 @@ void Stack::push(int val) {
 	}
 }
 
+// pop value from stack
 int Stack::pop() {
 	if(isEmpty()) {
 		cout << "stack underflow" << endl;
@@ -48,10 +53,12 @@ int Stack::pop() {
 	}
 }
 
+// count item in the stack
 int Stack::count() {
 	return top+1;
 }
 
+// check value at certain position
 int Stack::peek(int pos) {
 	if(isEmpty()) {
 		cout << "stack is underflow" << endl;
@@ -64,6 +71,7 @@ int Stack::peek(int pos) {
 	}
 }
 
+// change the value in the stack by position
 void Stack::change(int pos, int val) {
 	if(pos >=0 && pos <=4) {
 		arr[pos] = val;
@@ -73,6 +81,7 @@ void Stack::change(int pos, int val) {
 	}	
 }
 
+// show value in stack
 void Stack::display() {
 	cout << "All values in the stack are " << endl;
 	for(int i=4; i>=0; i--) {
@@ -80,5 +89,6 @@ void Stack::display() {
 	}
 }
 
+// deconstructor
 Stack::~Stack() {}
 
