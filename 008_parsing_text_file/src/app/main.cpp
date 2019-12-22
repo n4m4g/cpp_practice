@@ -6,7 +6,7 @@ using namespace std;
 int main() {
 	fstream inFile;
 
-	string fname = "../text.txt";
+	string fname = "../../src/app/text.txt";
 	inFile.open(fname, ios::in);
 
 	if(!inFile.is_open()) {
