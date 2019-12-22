@@ -3,6 +3,7 @@
 
 using namespace std;
 
+// constructor
 Queue::Queue() {
 	itemCount = 0;
 	front = -1;
@@ -12,6 +13,7 @@ Queue::Queue() {
 	}
 }
 
+// check whether the queue is empty
 bool Queue::isEmpty() {
 	if(itemCount==0) {
 		return true;
@@ -20,6 +22,7 @@ bool Queue::isEmpty() {
 	}
 }
 
+// check whether the queue is full
 bool Queue::isFull() {
 	if((rear+1)%5==front) {
 		return true;
@@ -28,6 +31,7 @@ bool Queue::isFull() {
 	}
 }
 
+// put value in queue
 void Queue::enQueue(int value) {
 	if(isFull()) {
 		cout << "Queue is full" << endl;
@@ -42,6 +46,7 @@ void Queue::enQueue(int value) {
 	itemCount++;
 }
 
+// get value from queue
 int Queue::deQueue() {
 	int x = 0;
 	if(isEmpty()) {
@@ -61,11 +66,13 @@ int Queue::deQueue() {
 	return x;
 }
 
+// get item count in queue
 int Queue::count() {
 	// return rear-front+1;
 	return itemCount;
 }
 
+// show value in queue
 void Queue::display() {
 	for(int i=0; i<5; i++) {
 		cout << arr[i] << " ";
@@ -73,8 +80,11 @@ void Queue::display() {
 	cout << endl;
 }
 
+// show ptr: front, rear
 void Queue::ptrStatus() {
 	cout << "front: " << front << ", rear: " << rear << endl;
 }
 
+// deconstructor
 Queue::~Queue() {}
+
