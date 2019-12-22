@@ -5,6 +5,7 @@
 Node::Node() {
 	key = 0;
 	data = 0;
+	// ptr to next node
 	next = NULL;
 }
 

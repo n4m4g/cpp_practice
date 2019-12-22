@@ -31,6 +31,7 @@ Node* SinglyLinkedList::nodeExists(int k) {
 	return tmp;
 }
 
+// append node to linked list at last position
 void SinglyLinkedList::nodeAppend(Node* n) {
 	if(nodeExists(n->key)!=NULL) {
 		cout << "Node already exists with key value: " << n->key << endl;
@@ -49,6 +50,7 @@ void SinglyLinkedList::nodeAppend(Node* n) {
 	}
 }
 
+// append node to linked list at first position
 void SinglyLinkedList::nodePrepend(Node* n) {
 	if(nodeExists(n->key)!=NULL) {
 		cout << "Node already exists with key value: " << n->key << endl;
@@ -59,6 +61,7 @@ void SinglyLinkedList::nodePrepend(Node* n) {
 	}
 }
 
+// insert node after the node with key value
 void SinglyLinkedList::nodeInsertAfter(int k, Node* n) {
 	// check whether the key value exist in the list
 	Node* ptr = nodeExists(k);
@@ -76,6 +79,7 @@ void SinglyLinkedList::nodeInsertAfter(int k, Node* n) {
 	}
 }
 
+// delete node by key
 void SinglyLinkedList::nodeDeleteByKey(int k) {
 	if(head==NULL) {
 		cout << "Singly Linked List is empty, cant delete" << endl;
@@ -103,6 +107,7 @@ void SinglyLinkedList::nodeDeleteByKey(int k) {
 	}
 }
 
+// update data of node by key
 void SinglyLinkedList::nodeUpdate(int k, int d) {
 	Node* ptr = nodeExists(k);
 	if(ptr!=NULL) {
@@ -113,6 +118,7 @@ void SinglyLinkedList::nodeUpdate(int k, int d) {
 	}
 }
 
+// show value in linked list
 void SinglyLinkedList::nodePrint() {
 	if(head==NULL) {
 		cout << "Linked List is empty" << endl;
