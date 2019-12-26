@@ -1,4 +1,7 @@
+#include <iostream>
 #include "selectionsort.h"
+
+using namespace std;
 
 /*
  * void getArraySize(int arr[]){
@@ -50,5 +53,13 @@ void selectionsort(int arr[], int s) {
 			arr[min] = arr[i];
 			arr[i] = tmp;
 		}
+		printarr(arr, s);
 	}
+}
+
+void printarr(int arr[], int s) {
+	for(int i=0; i<s; i++) {
+		cout << arr[i] << " ";
+	}
+	cout << endl;
 }

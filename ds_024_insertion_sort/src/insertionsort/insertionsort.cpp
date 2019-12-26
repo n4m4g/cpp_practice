@@ -1,4 +1,7 @@
+#include <iostream>
 #include "insertionsort.h"
+
+using namespace std;
 
 /*
  * insertion sort
@@ -27,5 +30,13 @@ void insertionsort(int arr[], int s) {
 			j--;
 		}
 		arr[j+1] = key;
+		printarr(arr, s);
 	}
+}
+
+void printarr(int arr[], int s) {
+	for(int i=0; i<s; i++) {
+		cout << arr[i] << " ";
+	}
+	cout << endl;
 }
