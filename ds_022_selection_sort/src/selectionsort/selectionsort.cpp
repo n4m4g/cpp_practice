@@ -34,6 +34,14 @@ using namespace std;
  */
 
 /*
+ * 1. pick first element
+ * 2. swap with most smallest element in right side
+ * 3. pick second element
+ * 4. swap with most smallest element in right side
+ * ....
+ */
+
+/*
  * input arguments:
  * int arr[]: unsorted array
  * int s: size of unsorted array

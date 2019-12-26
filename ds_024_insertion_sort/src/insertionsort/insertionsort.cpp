@@ -14,6 +14,15 @@ using namespace std;
  * 5. repeat until list is sorted
  */
 
+
+/*
+ * 1. pick first 2 elements
+ * 2. shift most right element to left to right order position
+ * 3. pick first 3 elements
+ * 4. shift most right element to left to right order position
+ * ....
+ */
+
 /*
  * input arguments:
  * int arr[]: unsorted array

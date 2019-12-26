@@ -15,6 +15,12 @@ using namespace std;
  */
 
 /*
+ * 1st, 2nd swap
+ * 2nd, 3rd swap
+ * ...
+ */
+
+/*
  * input arguments:
  * int arr[]: unsorted array
  * int s: size of unsorted array
