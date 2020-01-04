@@ -3,8 +3,6 @@
 
 using namespace std;
 
-class BinaryTree;
-
 class TreeNode {
 	public:
 		TreeNode* lchild;
@@ -15,8 +13,6 @@ class TreeNode {
 		TreeNode();
 		TreeNode(string s);
 		~TreeNode();
-		
-		// friend class BinaryTree;
 };
 
 class BinaryTree {
@@ -31,9 +27,13 @@ class BinaryTree {
 		void postOrder(TreeNode* curr);
 		void levelOrder();
 
-		// TreeNode* leftmost(TreeNode* curr);
-		// TreeNode* inOrderSuccessor(TreeNode* curr);
+		TreeNode* leftmost(TreeNode* curr);
+		TreeNode* inOrderSuccessor(TreeNode* curr);
+		void inOrderByParent();
 
+		TreeNode* rightmost(TreeNode* curr);
+		TreeNode* inOrderPredecessor(TreeNode* curr);
+		void inOrderReverse();
 };
 
 #endif
